@@ -92,4 +92,4 @@ Appli(avec App.js et index.html pour SPA)
 
 Créez un Composant `monComposant` que vous appellerez dans votre App.js
 
-(Il pourra par exemple être rendu comme un <div>Hello World</div>)
+(Il pourra par exemple être rendu comme un `javascript <div>Hello World</div>`)
