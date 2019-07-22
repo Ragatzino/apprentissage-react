@@ -2,7 +2,6 @@
 
 <details><summary>Rappel sur les composants</summary>
 <p>
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 
 ## Rappel : Un composant c'est bien, mais c'est quoi ?
 
@@ -65,8 +64,6 @@ Cette application aura pour objectif d'afficher les différents utilisateurs de 
 <details><summary>Rappel sur la structure projet</summary>
 <p>
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
-
 ## Appli
 
 ```
@@ -93,6 +90,8 @@ Appli(avec App.js et index.html pour SPA)
 </p>
 </details>
 
-Créez un Composant `monComposant` que vous appellerez dans votre App.js
+# Exercice
+
+- Créez un Composant `monComposant` que vous appellerez dans votre App.js
 
 (Il pourra par exemple être rendu comme un `<div>Hello World</div>`)
