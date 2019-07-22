@@ -2,6 +2,7 @@
 
 <details><summary>Rappel sur les composants</summary>
 <p>
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 
 ## Rappel : Un composant c'est bien, mais c'est quoi ?
 
@@ -63,6 +64,8 @@ Cette application aura pour objectif d'afficher les différents utilisateurs de 
 ### 1 - Structurez votre projet
 <details><summary>Rappel sur la structure projet</summary>
 <p>
+
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 
 ## Appli
 
