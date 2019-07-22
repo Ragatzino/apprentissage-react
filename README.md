@@ -1,38 +1,62 @@
-# Exercice 0 - Configuration et lancement d'un projet
+# Exercice 1 - State et Props
 
-## Un peu de configuration
+<details><summary>Rappel sur les composants</summary>
+<p>
 
-- Une fois node installé (vous pouvez vérifier la version de node `node -v` et celle de npm `npm -v`), ajoutez la commande globale `npm install --global create-react-app` si ce n'est pas déjà fait.
+## Rappel : Un composant c'est bien, mais c'est quoi ?
 
-- Pour créer une application React, il suffit d'exécuter la commande `create-react-app mon-appli`. Pour la lancer on se place dans le dossier `cd mon-appli` puis `npm start`.
+Un Composant peut être une classe ou une fonction qui renvoie du [JSX](https://reactjs.org/docs/introducing-jsx.html) une syntaxe à mi-chemin entre html et javascript.
 
-- dans vscode installer l'extension eslint (cd mon-appli puis `npm info "eslint-config-airbnb@latest" peerDependencies` && `npx install-peerdeps --dev eslint-config-airbnb` pour la config d'airbnb par exemple) et ajouter un fichier .eslintrc contenant : `{ "extends": "airbnb" }` pour linter comme airbnb.
+```javascript
+const maVariableJavascript = "Mon premier essai en react";
 
-* dans vscode installer l'extension prettier permettant de formatter votre code, ce qui permet de formatter proprement votre code et donc a terme de clarifier les changements git dans votre projet.
-
-## Architecture projet React
-
-```
-Appli
- └──components
-    └──monComposant
-        ├── __tests__
-        │   └── monComposant-test.js
-        ├── monComposant.js (avec jsx dedans)
-        ├── monComposant.css (ou à l'interieur du js)
-        └── package.json( contenu : {
-         "main": "monComposant.js"
-            })
-└──reducers
-    └──monComposantContainer
-        ├── __tests__
-        │   └── monComposantContainer-test.js
-        ├── monComposantContainer.js
-        └── monComposantContainer.css (idem)
-└──utils
-     └──constantes etc..
+return <h1>Du JSX ? {maVariableJavascript}!</h1>;
 ```
 
-Remarque personnelle : Un choix intéressant a été fait sur Nautile, pour plus de clarté du code, on a réuni les composants qui composent un même bloc fonctionnel ensemble : ex formulaire et gestion de formulaire // Tout ce qui attrait au tableau de bord // etc..
+Le JSX doit être encadré de parenthèses () s'il s'étend sur plusieurs lignes, on y introduit du code javascript entre accolades {}.
 
-Nous appliquerons cette structure dans le prochain exercice.
+Il y a plusieurs manières de déclarer un composant `<MonComposant />` qu'on utilisera par exemple dans App.js :
+
+```javascript
+import React from "react";
+import MonComposant from "./MonComposant";
+
+function App() {
+  return <MonComposant />;
+}
+```
+
+- Une classe qui hérite de React.Component :
+
+```javascript
+import React from "react"; // Ou bien import React, {Component} from 'react' et utiliser directement extends Component. Il faut quand même importer React pour pouvoir utiliser le JSX !
+
+export default class MonComposant extends React.Component {
+  render() {
+    return <h1>Mon premier Composant React !</h1>;
+  }
+}
+```
+
+- Une fonction :
+
+```javascript
+import React from "react";
+
+function MonComposant() {
+  return <h1>Mon premier Composant React !</h1>;
+}
+
+// Équivalent à l'écriture en fonction fléchée :
+const MonComposant = () => {
+  return <h1>Mon premier Composant React !</h1>;
+};
+
+// Ne pas oublier l'export !
+export default MonComposant;
+```
+
+</p>
+</details>
+
+## Exercice 0 : Créer votre premier composant
