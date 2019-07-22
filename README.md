@@ -58,5 +58,31 @@ export default MonComposant;
 
 </p>
 </details>
-
-## Exercice 0 : Créer votre premier composant
+Nous allons réaliser ici une application classique, ayant pour la partie front, un Header, un Body et un Footer. 
+Cette application aura pour objectif d'afficher les différents utilisateurs de RocketChat de l'innovation. 
+### 1 - Structurez votre projet
+<details><summary>Rappel sur la structure projet</summary>
+<p>
+```
+Appli(avec App.js et index.html pour SPA)
+ └──components
+    └──monComposant
+        ├── __tests__
+        │   └── monComposant-test.js
+        ├── monComposant.js (avec jsx dedans)
+        ├── monComposant.css (ou à l'interieur du js)
+        └── package.json( contenu : {
+         "main": "monComposant.js"
+            })
+└──reducers
+    └──monComposantContainer
+        ├── __tests__
+        │   └── monComposantContainer-test.js
+        ├── monComposantContainer.js
+        └── monComposantContainer.css (idem)
+└──utils
+     └──constantes etc..
+```
+</p>
+</details>
+Créez un Composant ```javascript monComposant ``` que vous appellerez dans votre App.js
