@@ -63,6 +63,9 @@ Cette application aura pour objectif d'afficher les différents utilisateurs de 
 ### 1 - Structurez votre projet
 <details><summary>Rappel sur la structure projet</summary>
 <p>
+
+## Appli
+
 ```
 Appli(avec App.js et index.html pour SPA)
  └──components
@@ -83,6 +86,9 @@ Appli(avec App.js et index.html pour SPA)
 └──utils
      └──constantes etc..
 ```
+
 </p>
 </details>
 Créez un Composant ```javascript monComposant ``` que vous appellerez dans votre App.js
+
+(Il pourra par exemple être rendu comme un <div>Hello World</div>)
